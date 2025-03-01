@@ -1,6 +1,5 @@
 class Solution:
     def maxOfSubarrays(self, arr, k):
-        n = len(arr)
         kmaxarr = []
         dq = deque()
         for i in range(k):
