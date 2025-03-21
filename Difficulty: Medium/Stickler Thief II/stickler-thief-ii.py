@@ -12,7 +12,6 @@ class Solution:
         # code here
         
     def maxValTab(self, x, y, arr):
-        n = len(arr)
         prev2 = arr[x]
         prev1 = max(arr[x], arr[x + 1])
         for j in range(x + 2, y + 1):
