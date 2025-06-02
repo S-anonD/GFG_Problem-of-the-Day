@@ -1,6 +1,5 @@
 class Solution:
     def countSubstr (self, s, k):
-        n = len(s)
         ans = 0
         ans = self.count(s, k) - self.count(s, k - 1)
         return ans
