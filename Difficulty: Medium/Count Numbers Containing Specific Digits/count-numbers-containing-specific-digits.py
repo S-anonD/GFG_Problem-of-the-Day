@@ -12,7 +12,8 @@ class Solution:
                     f0 += 1
         total = 9 * self.fastpow(10, n - 1)
         none_allowed = f0 if n == 1 else f0 * self.fastpow(f, n - 1)
-        return total - none_allowed        # code here
+        return total - none_allowed        
+        # code here
     
     def fastpow(self, base, exp):
         res = 1
