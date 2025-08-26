@@ -1,7 +1,4 @@
-#User function Template for python3
-
 class Solution:
-    #Function to count the number of possible triangles.
     def countTriangles(self, arr):
         res = 0
         arr.sort()
@@ -15,19 +12,4 @@ class Solution:
                     left += 1
         return res
         # code here
-
-
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
-
-if __name__ == '__main__':
-    t = int(input())
-    for _ in range(t):
-        arr = list(map(int, input().strip().split()))
-        ob = Solution()
-        print(ob.countTriangles(arr))
-
-        print("~")
-
-# } Driver Code Ends
+        
