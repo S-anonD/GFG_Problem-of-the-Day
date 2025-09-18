@@ -1,13 +1,13 @@
 class Solution:
-    def nextLargerElement(self, arr):
+    def nextGreater(self, arr):
         n = len(arr)
         res = [-1] * n
-        stk = []
+        st = []
         for i in range(2 * n - 1, -1, -1):
-            while stk and stk[-1] <= arr[i % n]:
-                stk.pop()
-            if i < n and stk:
-                res[i] = stk[-1]
-            stk.append(arr[i % n])
+            while st and st[-1] <= arr[i % n]:
+                st.pop()
+            if i < n and st:
+                res[i] = st[-1]
+            st.append(arr[i % n])
         return res
         # code here
